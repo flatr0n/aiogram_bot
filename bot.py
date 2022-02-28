@@ -22,8 +22,7 @@ async def process_help_command(message: types.Message):
 
 @dp.message_handler()
 async def echo_message(msg: types.Message):
-    await msg.reply(msg)
-    await msg.reply('hello :eyes:')
+    await msg.reply(msg.text)
 
 
 if __name__ == '__main__':
